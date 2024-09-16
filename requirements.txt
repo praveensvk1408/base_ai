@@ -1,0 +1,13 @@
+pytest
+pyautogui
+pytest-html-reporter
+marshmallow
+pytest-bdd
+pyscreenrec
+pytest-yaml
+pytest-testrail
+pytest-rerunfailures
+pytest-html
+requests
+pytest-dependency
+pytest-html-reporter

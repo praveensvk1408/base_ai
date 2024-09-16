@@ -1,0 +1,164 @@
+GetDeployConfigurations:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  403: { "code": "E.SC.API.0000004", "message": "Incorrect permissions." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+
+CreateDeployConfiguration:
+  400:
+    { "code": "E.SC.API.0022001", "message": "Parameter config_id is not set." }
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  403: { "code": "E.SC.API.0000004", "message": "Incorrect permissions." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+GetDeployConfiguration:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  404: { "code": "E.SC.API.0021001", "message": "Not found." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+DeployByConfiguration:
+  400:
+    {
+      "code": "E.SC.API.0027001",
+      "message": "Parameter device_ids is not set.",
+    }
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+
+  403: { "code": "E.SC.API.0000004", "message": "Incorrect permissions." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+DeleteDeployConfiguration:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  403: { "code": "E.SC.API.0000004", "message": "Incorrect permissions." }
+  404: { "code": "E.SC.API.0055002", "message": "Not found." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+CancelDeployment:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  403: { "code": "E.SC.API.0000004", "message": "Incorrect permissions." }
+  404: { "code": "E.SC.API.0166001", "message": "Not found." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+GetDeployHistory:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  403: { "code": "E.SC.API.0000004", "message": "Incorrect permissions." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+GetDeployStatusHistory:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  403: { "code": "E.SC.API.0000004", "message": "Incorrect permissions." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+GetDeployDevices:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  403: { "code": "E.SC.API.0000004", "message": "Incorrect permissions." }
+  404: { "code": "E.SC.API.0274001", "message": "Not found." }
+  500:
+    {
+      "result": "ERROR",
+      "code": "E.SC.API.0000001",
+      "message": "Internal server error.",
+      "time": "2022-01-01T01:01:01.000001",
+    }
+  503:
+    {
+      "result": "ERROR",
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+      "time": "2022-01-01T01:01:01.000001",
+    }
+DeployDeviceModel:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  403: { "code": "E.SC.API.0059001", "message": "Not found." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+UndeployModel:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  403: { "code": "E.SC.API.0059001", "message": "Not found." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+CreateFirmware:
+  400:
+    {
+      "code": "E.SC.API.0025001",
+      "message": "Parameter firmware_type is not set.",
+    }
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+GetFirmware:
+  400:
+    {
+      "code": "E.SC.API.0024001",
+      "message": "Invalid parameter firmware_type.",
+    }
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  404: { "code": "E.SC.API.0024003", "message": "Not found." } #This response code not added in api
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+GetDevice:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  404: { "code": "E.SC.API.0002001", "message": "Not found." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
+DeleteFirmware:
+  401: { "code": "E.SC.API.0000002", "message": "Not signed in." }
+  404: { "code": "W.SC.API.0026003", "message": "Not found." }
+  500: { "code": "E.SC.API.0000001", "message": "Internal server error." }
+  503:
+    {
+      "code": "E.SC.API.0000005",
+      "message": "Service is temporarily unavailable.",
+    }
