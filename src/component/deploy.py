@@ -54,7 +54,7 @@ class Deploy:
                 config_id
             )  # delete if config id is already present
         url = f"{self.REST_API_URL}/deployconfigurations?grant_type=client_credentials&config_id={config_id}&ap_fw_version_number={ap_fw_version_number}&sensor_version_number={sensor_version_number}&model_id={model_id}&sensor_loader_version_number={sensor_loader_version_number}"  # Base url with end point
-        token = GetToken().get_token()  # fetching the token
+        token = "Bearer "+GetToken().get_token().json()["access_token"]  # fetching the token
         response = requests.post(
             url, headers={"authorization": token}, timeout=30
         )  # sending request to the server
@@ -63,7 +63,7 @@ class Deploy:
     def delete_deploy_configuration(self, config_id):
         """This method implements '''Delete deploy configuration''' API"""
         url = f"{self.REST_API_URL}/deployconfigurations/{config_id}?grant_type=client_credentials"  # Base url with end point
-        token = GetToken().get_token()  # fetching the token
+        token = "Bearer "+GetToken().get_token().json()["access_token"]  # fetching the token
         response = requests.delete(
             url, headers={"authorization": token}, timeout=30
         )  # sending request to the server
@@ -72,7 +72,7 @@ class Deploy:
     def get_deploy_configuration(self, config_id):
         """This method implements '''Get deploy configuration''' API"""
         url = f"{self.REST_API_URL}/deployconfigurations/{config_id}?grant_type=client_credentials"  # Base url with end point
-        token = GetToken().get_token()  # fetching the token
+        token = "Bearer "+GetToken().get_token().json()["access_token"]  # fetching the token
         response = requests.get(
             url, headers={"authorization": token}, timeout=30
         )  # sending request to the server
@@ -81,7 +81,7 @@ class Deploy:
     def deploy_by_configuration(self, config_id, device_id):
         """This method implements '''Deploy by configuration''' API"""
         url = f"{self.REST_API_URL}/deployconfigurations/{config_id}?grant_type=client_credentials&device_ids={device_id}"  # Base url with end point
-        token = GetToken().get_token()  # fetching the token
+        token = "Bearer "+GetToken().get_token().json()["access_token"]  # fetching the token
         response = requests.put(
             url,
             headers={"authorization": token},
@@ -92,7 +92,7 @@ class Deploy:
     def get_deploy_history(self, device_id):
         """This method implements '''Get deploy history''' API"""
         url = f"{self.REST_API_URL}/devices/{device_id}/deploys?grant_type=client_credentials"  # Base url with end point
-        token = GetToken().get_token()  # fetching the token
+        token = "Bearer "+GetToken().get_token().json()["access_token"]  # fetching the token
         response = requests.get(
             url, headers={"authorization": token}, timeout=30
         )  # sending request to the server
@@ -132,7 +132,7 @@ class Deploy:
     def cancel_deployment(self, device_id, deploy_id):
         """This method is used to cancel the deployment"""
         url = f"{self.REST_API_URL}/devices/{device_id}/deploys/{deploy_id}?grant_type=client_credentials"
-        token = GetToken().get_token()
+        token = "Bearer "+GetToken().get_token().json()["access_token"]
         response = requests.put(
             url, headers={"authorization": token}, timeout=30
         )
@@ -141,7 +141,7 @@ class Deploy:
     def undeploy_model(self, device_id, model_id):
         """This method is used for undeploying the model"""
         url = f"{self.REST_API_URL}/devices/{device_id}/models/{model_id}"
-        token = GetToken().get_token()
+        token = "Bearer "+GetToken().get_token().json()["access_token"]
         response = requests.delete(
             url, headers={"authorization": token}, timeout=30
         )

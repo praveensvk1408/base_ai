@@ -24,14 +24,13 @@ from marshmallow import EXCLUDE, Schema, ValidationError, fields
 class GetEdgeAppSchema(Schema):
     """This class will have the schema fields of Get EdgeApp"""
 
-    app_name = fields.Str(strict=True, required=True)
-    app_version = fields.Str(strict=True, required=True)
+    name = fields.Str(strict=True, required=True)
+    version = fields.Str(strict=True, required=True)
     compiled_flg = fields.Bool(strict=True, required=True)
-    deploy_count = fields.Int(strict=True, required=True)
-    description = fields.Str(strict=True, required=True)
+    deploy_count = fields.Str(strict=True, required=True)
+    comment = fields.Str(strict=True, required=True)
     ins_date = fields.DateTime(strict=True, required=True)
     ins_id = fields.Str(strict=True, required=True)
-    root_dtmi = fields.Str(strict=True, required=True)
     status = fields.Str(strict=True, required=True)
     upd_date = fields.DateTime(strict=True, required=True)
     upd_id = fields.Str(strict=True, required=True)

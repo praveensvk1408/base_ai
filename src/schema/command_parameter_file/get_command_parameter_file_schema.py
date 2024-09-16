@@ -150,548 +150,548 @@ class GetCommandParameterFileSchemaValidation:
             return err
 
 
-data = {
-    "parameter_list": [
-        {
-            "parameter": {
-                "commands": [
-                    {
-                        "command_name": "StartUploadInferenceData",
-                        "parameters": {
-                            "ModelId": "HumanDetectionAttribution_v1.2.0",
-                            "Mode": 2,
-                            "UploadMethod": "BlobStorage",
-                            "FileFormat": "JPG",
-                            "UploadMethodIR": "MQTT",
-                            "CropHOffset": 0,
-                            "CropVOffset": 0,
-                            "CropHSize": 4056,
-                            "CropVSize": 3040,
-                            "NumberOfImages": 0,
-                            "NumberOfInferencesPerMessage": 5,
-                            "UploadInterval": 1,
-                            "PPLParameter": {
-                                "log_level": "close",
-                                "max_body_detection": 30,
-                                "body_detection_ROI": {
-                                    "left": 0,
-                                    "top": 0,
-                                    "right": 512,
-                                    "bottom": 384
-                                },
-                                "body_detection_threshold": 0.4,
-                                "body_detection_iou_nms_threshold": 0.5,
-                                "gender_threshold": 0.57,
-                                "track_iou_threshold": 0.9,
-                                "kalman_filter_enable": true,
-                                "cluster_ROI": [
-                                    {
-                                        "x": 0,
-                                        "y": 0
-                                    },
-                                    {
-                                        "x": 512,
-                                        "y": 0
-                                    },
-                                    {
-                                        "x": 512,
-                                        "y": 384
-                                    },
-                                    {
-                                        "x": 0,
-                                        "y": 384
-                                    }
-                                ],
-                                "attribute_ROI": [],
-                                "trajectory_db_lifetime": 10
-                            }
-                        }
-                    }
-                ]
-            },
-            "file_name": "HumanDetectionAttribution_WASMStep3.json",
-            "isdefault": "false",
-            "comment": "",
-            "device_ids": [],
-            "ins_id": "0oagplyjar2nouTw51d7",
-            "ins_date": "2024-09-16 08: 44: 46.644248+00: 00",
-            "upd_id": "0oagplyjar2nouTw51d7",
-            "upd_date": "2024-09-16 08: 44: 46.644248+00: 00"
-        },
-        {
-            "parameter": {
-                "commands": [
-                    {
-                        "command_name": "StartUploadInferenceData",
-                        "parameters": {
-                            "ModelId": "GazeDetction_SARD_Test_20240723",
-                            "Mode": 1,
-                            "UploadMethod": "BlobStorage",
-                            "FileFormat": "JPG",
-                            "UploadMethodIR": "BlobStorage",
-                            "CropHOffset": 0,
-                            "CropVOffset": 0,
-                            "CropHSize": 4056,
-                            "CropVSize": 3040,
-                            "NumberOfImages": 0,
-                            "UploadInterval": 1,
-                            "NumberOfInferencesPerMessage": 1,
-                            "PPLParameter": {
-                                "log_level": "close",
-                                "face_detection_nms_threshold": 0.5,
-                                "max_body_detection": 30,
-                                "body_detection_threshold": 0.32,
-                                "face_detection_threshold": 0.315,
-                                "face_detection_ROI": [
-                                    [
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        480
-                                    ],
-                                    [
-                                        0,
-                                        480
-                                    ]
-                                ],
-                                "cluster_ROI": [
-                                    [
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        480
-                                    ],
-                                    [
-                                        0,
-                                        480
-                                    ]
-                                ],
-                                "trajectory_db_lifetime": 10.0,
-                                "cluster_iou_threshold": 0.65,
-                                "id_creation_threshold": 0.6,
-                                "gender_threshold": 0.6,
-                                "gaze_focus_threshold": 0,
-                                "enable_watching_region": true,
-                                "watching_region": {
-                                    "min_yaw": -19,
-                                    "max_yaw": 45,
-                                    "min_pitch": -15,
-                                    "max_pitch": 15
-                                },
-                                "enable_gaze_time_functions": true,
-                                "inference_result_filter_enable": true
-                            }
-                        }
-                    }
-                ]
-            },
-            "file_name": "TS1_Azure_Mode1_summary.json",
-            "isdefault": "false",
-            "comment": "",
-            "device_ids": [
-                "Aid-80010003-0000-2000-9002-000000000327"
-            ],
-            "ins_id": "00ufwv21ofMnEZmoE1d7",
-            "ins_date": "2024-09-10 07: 35: 41.741114+00: 00",
-            "upd_id": "00ufwv21ofMnEZmoE1d7",
-            "upd_date": "2024-09-10 09: 56: 56.356027+00: 00"
-        },
-        {
-            "parameter": {
-                "commands": [
-                    {
-                        "command_name": "StartUploadInferenceData",
-                        "parameters": {
-                            "ModelId": "GazeDetction_SARD_Test_20240723",
-                            "Mode": 1,
-                            "UploadMethod": "BlobStorage",
-                            "FileFormat": "JPG",
-                            "UploadMethodIR": "MQTT",
-                            "CropHOffset": 0,
-                            "CropVOffset": 0,
-                            "CropHSize": 4056,
-                            "CropVSize": 3040,
-                            "NumberOfImages": 0,
-                            "UploadInterval": 1,
-                            "NumberOfInferencesPerMessage": 1,
-                            "PPLParameter": {
-                                "log_level": "close",
-                                "face_detection_nms_threshold": 0.5,
-                                "max_body_detection": 30,
-                                "body_detection_threshold": 0.32,
-                                "face_detection_threshold": 0.315,
-                                "face_detection_ROI": [
-                                    [
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        480
-                                    ],
-                                    [
-                                        0,
-                                        480
-                                    ]
-                                ],
-                                "cluster_ROI": [
-                                    [
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        480
-                                    ],
-                                    [
-                                        0,
-                                        480
-                                    ]
-                                ],
-                                "trajectory_db_lifetime": 10.0,
-                                "cluster_iou_threshold": 0.65,
-                                "id_creation_threshold": 0.6,
-                                "gender_threshold": 0.6,
-                                "gaze_focus_threshold": 0,
-                                "enable_watching_region": true,
-                                "watching_region": {
-                                    "min_yaw": -19,
-                                    "max_yaw": 45,
-                                    "min_pitch": -15,
-                                    "max_pitch": 15
-                                },
-                                "enable_gaze_time_functions": true,
-                                "inference_result_filter_enable": true
-                            }
-                        }
-                    }
-                ]
-            },
-            "file_name": "gazedetection_summary.json",
-            "isdefault": "false",
-            "comment": "",
-            "device_ids": [
-                "Aid-80010003-0000-2000-9002-00000000031b"
-            ],
-            "ins_id": "00u6tqmuvtadoVPGQ1d7",
-            "ins_date": "2024-07-25 06: 37: 56.952810+00: 00",
-            "upd_id": "00u6tqmuvtadoVPGQ1d7",
-            "upd_date": "2024-07-25 06: 37: 56.952810+00: 00"
-        },
-        {
-            "parameter": {
-                "commands": [
-                    {
-                        "command_name": "StartUploadInferenceData",
-                        "parameters": {
-                            "ModelId": "Coffee_pod",
-                            "Mode": 1,
-                            "UploadMethod": "BlobStorage",
-                            "FileFormat": "JPG",
-                            "UploadMethodIR": "MQTT",
-                            "CropHOffset": 0,
-                            "CropVOffset": 0,
-                            "CropHSize": 4056,
-                            "CropVSize": 3040,
-                            "NumberOfImages": 10,
-                            "UploadInterval": 1,
-                            "NumberOfInferencesPerMessage": 1
-                        }
-                    }
-                ]
-            },
-            "file_name": "ssd_mobilenet_cmd_param.json",
-            "isdefault": "false",
-            "comment": "",
-            "device_ids": [],
-            "ins_id": "00u6tqmuvtadoVPGQ1d7",
-            "ins_date": "2024-07-24 12: 19: 13.849929+00: 00",
-            "upd_id": "00u6tqmuvtadoVPGQ1d7",
-            "upd_date": "2024-07-24 12: 19: 13.849929+00: 00"
-        },
-        {
-            "parameter": {
-                "commands": [
-                    {
-                        "command_name": "StartUploadInferenceData",
-                        "parameters": {
-                            "ModelId": "GazeDetction_SARD_Test_20240723",
-                            "Mode": 2,
-                            "UploadMethod": "BlobStorage",
-                            "FileFormat": "JPG",
-                            "UploadMethodIR": "MQTT",
-                            "CropHOffset": 0,
-                            "CropVOffset": 0,
-                            "CropHSize": 4056,
-                            "CropVSize": 3040,
-                            "NumberOfImages": 0,
-                            "UploadInterval": 1,
-                            "NumberOfInferencesPerMessage": 30,
-                            "PPLParameter": {
-                                "log_level": "close",
-                                "face_detection_nms_threshold": 0.5,
-                                "max_body_detection": 30,
-                                "body_detection_threshold": 0.32,
-                                "face_detection_threshold": 0.315,
-                                "face_detection_ROI": [
-                                    [
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        480
-                                    ],
-                                    [
-                                        0,
-                                        480
-                                    ]
-                                ],
-                                "cluster_ROI": [
-                                    [
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        480
-                                    ],
-                                    [
-                                        0,
-                                        480
-                                    ]
-                                ],
-                                "trajectory_db_lifetime": 10.0,
-                                "cluster_iou_threshold": 0.65,
-                                "id_creation_threshold": 0.6,
-                                "gender_threshold": 0.6,
-                                "gaze_focus_threshold": 0,
-                                "enable_watching_region": true,
-                                "watching_region": {
-                                    "min_yaw": -19,
-                                    "max_yaw": 45,
-                                    "min_pitch": -15,
-                                    "max_pitch": 15
-                                },
-                                "enable_gaze_time_functions": true,
-                                "inference_result_filter_enable": false
-                            }
-                        }
-                    }
-                ]
-            },
-            "file_name": "byframe_fps.json",
-            "isdefault": "false",
-            "comment": "",
-            "device_ids": [],
-            "ins_id": "00u6tqmuvtadoVPGQ1d7",
-            "ins_date": "2024-07-24 05: 04: 54.396120+00: 00",
-            "upd_id": "00u6tqmuvtadoVPGQ1d7",
-            "upd_date": "2024-07-24 05: 04: 54.396120+00: 00"
-        },
-        {
-            "parameter": {
-                "commands": [
-                    {
-                        "command_name": "StartUploadInferenceData",
-                        "parameters": {
-                            "ModelId": "GazeDetction_SARD_Test_20240723",
-                            "Mode": 1,
-                            "UploadMethod": "BlobStorage",
-                            "FileFormat": "JPG",
-                            "UploadMethodIR": "MQTT",
-                            "CropHOffset": 0,
-                            "CropVOffset": 0,
-                            "CropHSize": 4056,
-                            "CropVSize": 3040,
-                            "NumberOfImages": 1,
-                            "UploadInterval": 1,
-                            "NumberOfInferencesPerMessage": 1,
-                            "PPLParameter": {
-                                "log_level": "close",
-                                "face_detection_nms_threshold": 0.5,
-                                "max_body_detection": 30,
-                                "body_detection_threshold": 0.32,
-                                "face_detection_threshold": 0.315,
-                                "face_detection_ROI": [
-                                    [
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        480
-                                    ],
-                                    [
-                                        0,
-                                        480
-                                    ]
-                                ],
-                                "cluster_ROI": [
-                                    [
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        480
-                                    ],
-                                    [
-                                        0,
-                                        480
-                                    ]
-                                ],
-                                "trajectory_db_lifetime": 10.0,
-                                "cluster_iou_threshold": 0.65,
-                                "id_creation_threshold": 0.6,
-                                "gender_threshold": 0.6,
-                                "gaze_focus_threshold": 0,
-                                "enable_watching_region": true,
-                                "watching_region": {
-                                    "min_yaw": -19,
-                                    "max_yaw": 45,
-                                    "min_pitch": -15,
-                                    "max_pitch": 15
-                                },
-                                "enable_gaze_time_functions": true,
-                                "inference_result_filter_enable": false
-                            }
-                        }
-                    }
-                ]
-            },
-            "file_name": "byframe_Image1.json",
-            "isdefault": "false",
-            "comment": "",
-            "device_ids": [],
-            "ins_id": "00u6tqmuvtadoVPGQ1d7",
-            "ins_date": "2024-07-24 05: 00: 45.371442+00: 00",
-            "upd_id": "00u6tqmuvtadoVPGQ1d7",
-            "upd_date": "2024-07-24 05: 04: 18.635117+00: 00"
-        },
-        {
-            "parameter": {
-                "commands": [
-                    {
-                        "command_name": "StartUploadInferenceData",
-                        "parameters": {
-                            "ModelId": "Tetras_Gaze_Patch3_0531",
-                            "Mode": 1,
-                            "UploadMethod": "BlobStorage",
-                            "FileFormat": "JPG",
-                            "UploadMethodIR": "MQTT",
-                            "CropHOffset": 0,
-                            "CropVOffset": 0,
-                            "CropHSize": 4056,
-                            "CropVSize": 3040,
-                            "NumberOfImages": 0,
-                            "UploadInterval": 1,
-                            "NumberOfInferencesPerMessage": 1,
-                            "PPLParameter": {
-                                "log_level": "close",
-                                "face_detection_nms_threshold": 0.5,
-                                "max_body_detection": 30,
-                                "body_detection_threshold": 0.32,
-                                "face_detection_threshold": 0.315,
-                                "face_detection_ROI": [
-                                    [
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        480
-                                    ],
-                                    [
-                                        0,
-                                        480
-                                    ]
-                                ],
-                                "cluster_ROI": [
-                                    [
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        0
-                                    ],
-                                    [
-                                        640,
-                                        480
-                                    ],
-                                    [
-                                        0,
-                                        480
-                                    ]
-                                ],
-                                "trajectory_db_lifetime": 10.0,
-                                "cluster_iou_threshold": 0.65,
-                                "id_creation_threshold": 0.6,
-                                "gender_threshold": 0.6,
-                                "gaze_focus_threshold": 0,
-                                "enable_watching_region": true,
-                                "watching_region": {
-                                    "min_yaw": -19,
-                                    "max_yaw": 45,
-                                    "min_pitch": -15,
-                                    "max_pitch": 15
-                                },
-                                "enable_gaze_time_functions": true,
-                                "inference_result_filter_enable": true
-                            }
-                        }
-                    }
-                ]
-            },
-            "file_name": "summary.json",
-            "isdefault": "false",
-            "comment": "",
-            "device_ids": [],
-            "ins_id": "00u6tqmuvtadoVPGQ1d7",
-            "ins_date": "2024-07-24 04: 59: 57.383951+00: 00",
-            "upd_id": "00u6tqmuvtadoVPGQ1d7",
-            "upd_date": "2024-07-24 04: 59: 57.383951+00: 00"
-        }
-    ]
-}
+# data = {
+#     "parameter_list": [
+#         {
+#             "parameter": {
+#                 "commands": [
+#                     {
+#                         "command_name": "StartUploadInferenceData",
+#                         "parameters": {
+#                             "ModelId": "HumanDetectionAttribution_v1.2.0",
+#                             "Mode": 2,
+#                             "UploadMethod": "BlobStorage",
+#                             "FileFormat": "JPG",
+#                             "UploadMethodIR": "MQTT",
+#                             "CropHOffset": 0,
+#                             "CropVOffset": 0,
+#                             "CropHSize": 4056,
+#                             "CropVSize": 3040,
+#                             "NumberOfImages": 0,
+#                             "NumberOfInferencesPerMessage": 5,
+#                             "UploadInterval": 1,
+#                             "PPLParameter": {
+#                                 "log_level": "close",
+#                                 "max_body_detection": 30,
+#                                 "body_detection_ROI": {
+#                                     "left": 0,
+#                                     "top": 0,
+#                                     "right": 512,
+#                                     "bottom": 384
+#                                 },
+#                                 "body_detection_threshold": 0.4,
+#                                 "body_detection_iou_nms_threshold": 0.5,
+#                                 "gender_threshold": 0.57,
+#                                 "track_iou_threshold": 0.9,
+#                                 "kalman_filter_enable": true,
+#                                 "cluster_ROI": [
+#                                     {
+#                                         "x": 0,
+#                                         "y": 0
+#                                     },
+#                                     {
+#                                         "x": 512,
+#                                         "y": 0
+#                                     },
+#                                     {
+#                                         "x": 512,
+#                                         "y": 384
+#                                     },
+#                                     {
+#                                         "x": 0,
+#                                         "y": 384
+#                                     }
+#                                 ],
+#                                 "attribute_ROI": [],
+#                                 "trajectory_db_lifetime": 10
+#                             }
+#                         }
+#                     }
+#                 ]
+#             },
+#             "file_name": "HumanDetectionAttribution_WASMStep3.json",
+#             "isdefault": "false",
+#             "comment": "",
+#             "device_ids": [],
+#             "ins_id": "0oagplyjar2nouTw51d7",
+#             "ins_date": "2024-09-16 08: 44: 46.644248+00: 00",
+#             "upd_id": "0oagplyjar2nouTw51d7",
+#             "upd_date": "2024-09-16 08: 44: 46.644248+00: 00"
+#         },
+#         {
+#             "parameter": {
+#                 "commands": [
+#                     {
+#                         "command_name": "StartUploadInferenceData",
+#                         "parameters": {
+#                             "ModelId": "GazeDetction_SARD_Test_20240723",
+#                             "Mode": 1,
+#                             "UploadMethod": "BlobStorage",
+#                             "FileFormat": "JPG",
+#                             "UploadMethodIR": "BlobStorage",
+#                             "CropHOffset": 0,
+#                             "CropVOffset": 0,
+#                             "CropHSize": 4056,
+#                             "CropVSize": 3040,
+#                             "NumberOfImages": 0,
+#                             "UploadInterval": 1,
+#                             "NumberOfInferencesPerMessage": 1,
+#                             "PPLParameter": {
+#                                 "log_level": "close",
+#                                 "face_detection_nms_threshold": 0.5,
+#                                 "max_body_detection": 30,
+#                                 "body_detection_threshold": 0.32,
+#                                 "face_detection_threshold": 0.315,
+#                                 "face_detection_ROI": [
+#                                     [
+#                                         0,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         480
+#                                     ],
+#                                     [
+#                                         0,
+#                                         480
+#                                     ]
+#                                 ],
+#                                 "cluster_ROI": [
+#                                     [
+#                                         0,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         480
+#                                     ],
+#                                     [
+#                                         0,
+#                                         480
+#                                     ]
+#                                 ],
+#                                 "trajectory_db_lifetime": 10.0,
+#                                 "cluster_iou_threshold": 0.65,
+#                                 "id_creation_threshold": 0.6,
+#                                 "gender_threshold": 0.6,
+#                                 "gaze_focus_threshold": 0,
+#                                 "enable_watching_region": true,
+#                                 "watching_region": {
+#                                     "min_yaw": -19,
+#                                     "max_yaw": 45,
+#                                     "min_pitch": -15,
+#                                     "max_pitch": 15
+#                                 },
+#                                 "enable_gaze_time_functions": true,
+#                                 "inference_result_filter_enable": true
+#                             }
+#                         }
+#                     }
+#                 ]
+#             },
+#             "file_name": "TS1_Azure_Mode1_summary.json",
+#             "isdefault": "false",
+#             "comment": "",
+#             "device_ids": [
+#                 "Aid-80010003-0000-2000-9002-000000000327"
+#             ],
+#             "ins_id": "00ufwv21ofMnEZmoE1d7",
+#             "ins_date": "2024-09-10 07: 35: 41.741114+00: 00",
+#             "upd_id": "00ufwv21ofMnEZmoE1d7",
+#             "upd_date": "2024-09-10 09: 56: 56.356027+00: 00"
+#         },
+#         {
+#             "parameter": {
+#                 "commands": [
+#                     {
+#                         "command_name": "StartUploadInferenceData",
+#                         "parameters": {
+#                             "ModelId": "GazeDetction_SARD_Test_20240723",
+#                             "Mode": 1,
+#                             "UploadMethod": "BlobStorage",
+#                             "FileFormat": "JPG",
+#                             "UploadMethodIR": "MQTT",
+#                             "CropHOffset": 0,
+#                             "CropVOffset": 0,
+#                             "CropHSize": 4056,
+#                             "CropVSize": 3040,
+#                             "NumberOfImages": 0,
+#                             "UploadInterval": 1,
+#                             "NumberOfInferencesPerMessage": 1,
+#                             "PPLParameter": {
+#                                 "log_level": "close",
+#                                 "face_detection_nms_threshold": 0.5,
+#                                 "max_body_detection": 30,
+#                                 "body_detection_threshold": 0.32,
+#                                 "face_detection_threshold": 0.315,
+#                                 "face_detection_ROI": [
+#                                     [
+#                                         0,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         480
+#                                     ],
+#                                     [
+#                                         0,
+#                                         480
+#                                     ]
+#                                 ],
+#                                 "cluster_ROI": [
+#                                     [
+#                                         0,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         480
+#                                     ],
+#                                     [
+#                                         0,
+#                                         480
+#                                     ]
+#                                 ],
+#                                 "trajectory_db_lifetime": 10.0,
+#                                 "cluster_iou_threshold": 0.65,
+#                                 "id_creation_threshold": 0.6,
+#                                 "gender_threshold": 0.6,
+#                                 "gaze_focus_threshold": 0,
+#                                 "enable_watching_region": true,
+#                                 "watching_region": {
+#                                     "min_yaw": -19,
+#                                     "max_yaw": 45,
+#                                     "min_pitch": -15,
+#                                     "max_pitch": 15
+#                                 },
+#                                 "enable_gaze_time_functions": true,
+#                                 "inference_result_filter_enable": true
+#                             }
+#                         }
+#                     }
+#                 ]
+#             },
+#             "file_name": "gazedetection_summary.json",
+#             "isdefault": "false",
+#             "comment": "",
+#             "device_ids": [
+#                 "Aid-80010003-0000-2000-9002-00000000031b"
+#             ],
+#             "ins_id": "00u6tqmuvtadoVPGQ1d7",
+#             "ins_date": "2024-07-25 06: 37: 56.952810+00: 00",
+#             "upd_id": "00u6tqmuvtadoVPGQ1d7",
+#             "upd_date": "2024-07-25 06: 37: 56.952810+00: 00"
+#         },
+#         {
+#             "parameter": {
+#                 "commands": [
+#                     {
+#                         "command_name": "StartUploadInferenceData",
+#                         "parameters": {
+#                             "ModelId": "Coffee_pod",
+#                             "Mode": 1,
+#                             "UploadMethod": "BlobStorage",
+#                             "FileFormat": "JPG",
+#                             "UploadMethodIR": "MQTT",
+#                             "CropHOffset": 0,
+#                             "CropVOffset": 0,
+#                             "CropHSize": 4056,
+#                             "CropVSize": 3040,
+#                             "NumberOfImages": 10,
+#                             "UploadInterval": 1,
+#                             "NumberOfInferencesPerMessage": 1
+#                         }
+#                     }
+#                 ]
+#             },
+#             "file_name": "ssd_mobilenet_cmd_param.json",
+#             "isdefault": "false",
+#             "comment": "",
+#             "device_ids": [],
+#             "ins_id": "00u6tqmuvtadoVPGQ1d7",
+#             "ins_date": "2024-07-24 12: 19: 13.849929+00: 00",
+#             "upd_id": "00u6tqmuvtadoVPGQ1d7",
+#             "upd_date": "2024-07-24 12: 19: 13.849929+00: 00"
+#         },
+#         {
+#             "parameter": {
+#                 "commands": [
+#                     {
+#                         "command_name": "StartUploadInferenceData",
+#                         "parameters": {
+#                             "ModelId": "GazeDetction_SARD_Test_20240723",
+#                             "Mode": 2,
+#                             "UploadMethod": "BlobStorage",
+#                             "FileFormat": "JPG",
+#                             "UploadMethodIR": "MQTT",
+#                             "CropHOffset": 0,
+#                             "CropVOffset": 0,
+#                             "CropHSize": 4056,
+#                             "CropVSize": 3040,
+#                             "NumberOfImages": 0,
+#                             "UploadInterval": 1,
+#                             "NumberOfInferencesPerMessage": 30,
+#                             "PPLParameter": {
+#                                 "log_level": "close",
+#                                 "face_detection_nms_threshold": 0.5,
+#                                 "max_body_detection": 30,
+#                                 "body_detection_threshold": 0.32,
+#                                 "face_detection_threshold": 0.315,
+#                                 "face_detection_ROI": [
+#                                     [
+#                                         0,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         480
+#                                     ],
+#                                     [
+#                                         0,
+#                                         480
+#                                     ]
+#                                 ],
+#                                 "cluster_ROI": [
+#                                     [
+#                                         0,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         480
+#                                     ],
+#                                     [
+#                                         0,
+#                                         480
+#                                     ]
+#                                 ],
+#                                 "trajectory_db_lifetime": 10.0,
+#                                 "cluster_iou_threshold": 0.65,
+#                                 "id_creation_threshold": 0.6,
+#                                 "gender_threshold": 0.6,
+#                                 "gaze_focus_threshold": 0,
+#                                 "enable_watching_region": true,
+#                                 "watching_region": {
+#                                     "min_yaw": -19,
+#                                     "max_yaw": 45,
+#                                     "min_pitch": -15,
+#                                     "max_pitch": 15
+#                                 },
+#                                 "enable_gaze_time_functions": true,
+#                                 "inference_result_filter_enable": false
+#                             }
+#                         }
+#                     }
+#                 ]
+#             },
+#             "file_name": "byframe_fps.json",
+#             "isdefault": "false",
+#             "comment": "",
+#             "device_ids": [],
+#             "ins_id": "00u6tqmuvtadoVPGQ1d7",
+#             "ins_date": "2024-07-24 05: 04: 54.396120+00: 00",
+#             "upd_id": "00u6tqmuvtadoVPGQ1d7",
+#             "upd_date": "2024-07-24 05: 04: 54.396120+00: 00"
+#         },
+#         {
+#             "parameter": {
+#                 "commands": [
+#                     {
+#                         "command_name": "StartUploadInferenceData",
+#                         "parameters": {
+#                             "ModelId": "GazeDetction_SARD_Test_20240723",
+#                             "Mode": 1,
+#                             "UploadMethod": "BlobStorage",
+#                             "FileFormat": "JPG",
+#                             "UploadMethodIR": "MQTT",
+#                             "CropHOffset": 0,
+#                             "CropVOffset": 0,
+#                             "CropHSize": 4056,
+#                             "CropVSize": 3040,
+#                             "NumberOfImages": 1,
+#                             "UploadInterval": 1,
+#                             "NumberOfInferencesPerMessage": 1,
+#                             "PPLParameter": {
+#                                 "log_level": "close",
+#                                 "face_detection_nms_threshold": 0.5,
+#                                 "max_body_detection": 30,
+#                                 "body_detection_threshold": 0.32,
+#                                 "face_detection_threshold": 0.315,
+#                                 "face_detection_ROI": [
+#                                     [
+#                                         0,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         480
+#                                     ],
+#                                     [
+#                                         0,
+#                                         480
+#                                     ]
+#                                 ],
+#                                 "cluster_ROI": [
+#                                     [
+#                                         0,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         480
+#                                     ],
+#                                     [
+#                                         0,
+#                                         480
+#                                     ]
+#                                 ],
+#                                 "trajectory_db_lifetime": 10.0,
+#                                 "cluster_iou_threshold": 0.65,
+#                                 "id_creation_threshold": 0.6,
+#                                 "gender_threshold": 0.6,
+#                                 "gaze_focus_threshold": 0,
+#                                 "enable_watching_region": true,
+#                                 "watching_region": {
+#                                     "min_yaw": -19,
+#                                     "max_yaw": 45,
+#                                     "min_pitch": -15,
+#                                     "max_pitch": 15
+#                                 },
+#                                 "enable_gaze_time_functions": true,
+#                                 "inference_result_filter_enable": false
+#                             }
+#                         }
+#                     }
+#                 ]
+#             },
+#             "file_name": "byframe_Image1.json",
+#             "isdefault": "false",
+#             "comment": "",
+#             "device_ids": [],
+#             "ins_id": "00u6tqmuvtadoVPGQ1d7",
+#             "ins_date": "2024-07-24 05: 00: 45.371442+00: 00",
+#             "upd_id": "00u6tqmuvtadoVPGQ1d7",
+#             "upd_date": "2024-07-24 05: 04: 18.635117+00: 00"
+#         },
+#         {
+#             "parameter": {
+#                 "commands": [
+#                     {
+#                         "command_name": "StartUploadInferenceData",
+#                         "parameters": {
+#                             "ModelId": "Tetras_Gaze_Patch3_0531",
+#                             "Mode": 1,
+#                             "UploadMethod": "BlobStorage",
+#                             "FileFormat": "JPG",
+#                             "UploadMethodIR": "MQTT",
+#                             "CropHOffset": 0,
+#                             "CropVOffset": 0,
+#                             "CropHSize": 4056,
+#                             "CropVSize": 3040,
+#                             "NumberOfImages": 0,
+#                             "UploadInterval": 1,
+#                             "NumberOfInferencesPerMessage": 1,
+#                             "PPLParameter": {
+#                                 "log_level": "close",
+#                                 "face_detection_nms_threshold": 0.5,
+#                                 "max_body_detection": 30,
+#                                 "body_detection_threshold": 0.32,
+#                                 "face_detection_threshold": 0.315,
+#                                 "face_detection_ROI": [
+#                                     [
+#                                         0,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         480
+#                                     ],
+#                                     [
+#                                         0,
+#                                         480
+#                                     ]
+#                                 ],
+#                                 "cluster_ROI": [
+#                                     [
+#                                         0,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         0
+#                                     ],
+#                                     [
+#                                         640,
+#                                         480
+#                                     ],
+#                                     [
+#                                         0,
+#                                         480
+#                                     ]
+#                                 ],
+#                                 "trajectory_db_lifetime": 10.0,
+#                                 "cluster_iou_threshold": 0.65,
+#                                 "id_creation_threshold": 0.6,
+#                                 "gender_threshold": 0.6,
+#                                 "gaze_focus_threshold": 0,
+#                                 "enable_watching_region": true,
+#                                 "watching_region": {
+#                                     "min_yaw": -19,
+#                                     "max_yaw": 45,
+#                                     "min_pitch": -15,
+#                                     "max_pitch": 15
+#                                 },
+#                                 "enable_gaze_time_functions": true,
+#                                 "inference_result_filter_enable": true
+#                             }
+#                         }
+#                     }
+#                 ]
+#             },
+#             "file_name": "summary.json",
+#             "isdefault": "false",
+#             "comment": "",
+#             "device_ids": [],
+#             "ins_id": "00u6tqmuvtadoVPGQ1d7",
+#             "ins_date": "2024-07-24 04: 59: 57.383951+00: 00",
+#             "upd_id": "00u6tqmuvtadoVPGQ1d7",
+#             "upd_date": "2024-07-24 04: 59: 57.383951+00: 00"
+#         }
+#     ]
+# }

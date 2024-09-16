@@ -89,7 +89,7 @@ class EdgeApp:
         start_time = timer()  # start the timer
         status = None
         while (
-            status != "compiled"
+            status != "2"
         ):  # wait for the publish model to complete within 10 minutes
             response = self.get_edge_app(
                 app_name, app_version

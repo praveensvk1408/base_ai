@@ -57,7 +57,6 @@ class CommandParameterFile:
             self.delete_command_parameter_file_to_device(file_name)
         url = f"{self.REST_API_URL}/command_parameter_files?grant_type=client_credentials"
         token = "Bearer "+GetToken().get_token().json()["access_token"]
-        print(type(token))
         data = {
             "file_name": file_name,
             "parameter": FileContentBase64().file_content_base64data(
